@@ -1,0 +1,3 @@
+module vaza (input I11,I12,I21,I22,I32,I33, output V,E,F); 
+
+endmodule 

@@ -1,0 +1,5 @@
+module placar_partida (input [3:0] B , input Clk, Clr, output I, output [3:0] Vit1);
+
+
+
+endmodule 

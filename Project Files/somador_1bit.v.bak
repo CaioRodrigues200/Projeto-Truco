@@ -1,0 +1,6 @@
+module somador_1bit(input A,B,Te, output S,Ts);
+
+	assign S = (A^B)^Te;
+	assign Ts = (A&Te)|(B&Te)|(A&B);
+
+endmodule 

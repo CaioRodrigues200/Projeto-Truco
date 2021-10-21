@@ -1,0 +1,22 @@
+module FF_JK (input J,K,clk,clr, output reg Q, Qbar);
+
+	always@(posedge clk or negedge clr)
+		begin
+			if(clr == 0)
+				begin
+					Q = 0;
+				end
+			else 
+				begin
+					case({J,K})
+						
+						0:	Q = Q;//00
+						1:	Q = 0;//01
+						2:	Q = 1;//10
+						3:	Q = ~Q;//11
+					endcase	
+				end
+			Qbar = ~Q;
+		end
+		
+endmodule
